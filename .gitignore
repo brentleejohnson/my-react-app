@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # Ignoring README file
-README2.md
+README2.txt
 
 # dependencies
 /node_modules
