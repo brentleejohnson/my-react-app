@@ -8,6 +8,10 @@
   outline: 3px dashed #228bec;
   outline-offset: 0;
 }
+*:focus {
+  outline: none;
+  border: none;
+}
 html {
   font: 62.5% / 1.15 sans-serif;
 }
@@ -221,6 +225,10 @@ body {
 }
 .todo-text:focus {
   box-shadow: inset 0 0 0 2px;
+}
+#todo-0:focus {
+  outline: none;
+  border: none;
 }
 /* CHECKBOX STYLES */
 .c-cb {
