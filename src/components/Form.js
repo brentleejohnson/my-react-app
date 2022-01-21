@@ -1,13 +1,13 @@
 import React from "react";
 
-function handleSubmit(e) {
-  e.preventDefault();
-  props.addTask("Say hello!");
-}
-
 function Form(props) {
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={function handleSubmit(e) {
+        e.preventDefault();
+        props.addTask("Say hello!");
+      }}
+    >
       <h2 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
           What needs to be done?
