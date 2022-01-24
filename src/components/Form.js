@@ -1,6 +1,9 @@
 import React from "react";
+import React, { useState } from "react";
 
 function Form(props) {
+  const [name, setName] = useState("");
+
   return (
     <form
       onSubmit={function handleSubmit(e) {
