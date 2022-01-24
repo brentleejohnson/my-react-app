@@ -8,7 +8,7 @@ function addTask(name) {
 }
 
 function App(props) {
-  const taskList = props.tasks.map((task) => (
+  const taskList = props.tasks?.map((task) => (
     <Todo
       id={task.id}
       name={task.name}
