@@ -5,7 +5,7 @@ function Form(props) {
   const [name, setName] = useState("");
 
   function handleChange(e) {
-    handleChange(e.target.value);
+    setName(e.target.value);
   }
 
   function handleSubmit(e) {
