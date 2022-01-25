@@ -4,12 +4,12 @@ import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 import { useState } from "react";
 
-function addTask(name) {
-  const newTask = { id: "id", name: name, completed: false };
-  setTasks([...tasks, newTask]);
-}
-
 function App(props) {
+  function addTask(name) {
+    const newTask = { id: "id", name: name, completed: false };
+    setTasks([...tasks, newTask]);
+  }
+
   const [tasks, setTasks] = useState(props.tasks);
   const taskList = tasks?.map((task) => (
     <Todo
