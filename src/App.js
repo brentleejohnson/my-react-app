@@ -5,11 +5,13 @@ import Todo from "./components/Todo";
 import { useState } from "react";
 
 function addTask(name) {
-  alert(name);
+  const newTask = { id: "id", name: name, completed: false };
+  setTasks([...tasks, newTask]);
 }
 
 function App(props) {
-  const taskList = tasks.map((task) => (
+  const [tasks, setTasks] = useState(props.tasks);
+  const taskList = tasks?.map((task) => (
     <Todo
       id={task.id}
       name={task.name}
@@ -17,8 +19,6 @@ function App(props) {
       key={task.id}
     />
   ));
-
-  const [tasks, setTasks] = useState(props.tasks);
 
   return (
     <div className="todoapp stack-large">
