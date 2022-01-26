@@ -21,8 +21,9 @@ function App(props) {
     />
   ));
 
-  const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
-  const headingText = `${taskList.length} ${tasksNoun} remaining`;
+  console.log(taskList.length);
+  // const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
+  // const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
   return (
     <div className="todoapp stack-large">
@@ -33,7 +34,7 @@ function App(props) {
         <FilterButton />
         <FilterButton />
       </div>
-      <h2 id="list-heading">{headingText}</h2>
+      <h2 id="list-heading">3 Tasks remaining</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
