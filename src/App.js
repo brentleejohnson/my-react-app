@@ -21,6 +21,7 @@ function App(props) {
     />
   ));
 
+  // console.log(taskList.length);
   const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
   const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
