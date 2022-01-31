@@ -21,9 +21,14 @@ function App(props) {
     />
   ));
 
-  // console.log(taskList.length);
-  const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
-  const headingText = `${taskList.length} ${tasksNoun} remaining`;
+  console.log(taskList.length);
+  // if (taskList == undefined) {
+  //   console.log("TaskList is undefined");
+  // } else {
+  //   console.log("TaskList IS defined");
+  // }
+  // const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
+  // const headingText = `${taskList.length} ${tasksNoun} remaining`;
 
   return (
     <div className="todoapp stack-large">
@@ -34,7 +39,7 @@ function App(props) {
         <FilterButton />
         <FilterButton />
       </div>
-      <h2 id="list-heading">{headingText}</h2>
+      <h2 id="list-heading"># of Tasks Remaining</h2>
       <ul
         role="list"
         className="todo-list stack-large stack-exception"
