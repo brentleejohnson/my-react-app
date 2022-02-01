@@ -1,9 +1,8 @@
 import React from "react";
-// import Loader from "react-loader-spinner";
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
+import Spinner from "./components/Spinner";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 
@@ -23,7 +22,7 @@ function App(props) {
     />
   ));
 
-  console.log(taskList.length);
+  console.log(taskList);
   // if (taskList == undefined) {
   //   console.log("TaskList is undefined");
   // } else {
