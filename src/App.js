@@ -3,7 +3,7 @@ import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo";
 // import Spinner from "./components/Spinner";
-import TestDummy from "./components/TestDummy";
+import Error from "./components/Error.js";
 import { useState } from "react";
 import { nanoid } from "nanoid";
 

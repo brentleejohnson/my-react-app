@@ -298,3 +298,22 @@ body {
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
+
+/* OWN */
+.neu-border {
+  border-radius: 30px;
+  background: #f5f5f5;
+  box-shadow: 8px 8px 15px #e4e4e4, -8px -8px 15px #ffffff;
+}
+.neu-border-inset {
+  border-radius: 30px;
+  background: #f5f5f5;
+  box-shadow: inset 8px 8px 15px #e4e4e4, inset -8px -8px 15px #ffffff;
+}
+.error-msg {
+  border-radius: 50px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: all 0.2s linear;
+}
